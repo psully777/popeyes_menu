@@ -6,3 +6,124 @@
 * {
   box-sizing: border-box;
 }
+
+#popeyesLogo {
+  width: 60rem;
+  height: 125px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#menus {
+  font-size: 25px;
+  display: inline-block;
+
+  position: relative;
+  justify-content: space-between;
+  text-align: left;
+  margin: 2rem;
+  margin-right: 2rem;
+  background-color: blueviolet;
+  left: -20px;
+  top: 1rem;
+}
+
+.resizedTextBox {
+  background-color: brown;
+  width: 75rem;
+  height: 20px;
+  text-align: center;
+}
+.heading_block p {
+  font-size: 35px;
+  font-weight: 700;
+  color: blue;
+}
+
+.centered {
+  width: 60rem;
+  height: 125px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.exploreOurMenu H1 {
+  color: white;
+  background: orange;
+  max-width: max-content;
+  margin: 10rem;
+}
+
+.menu_items h6 {
+  color: orange;
+  padding-left: 10px;
+  background-color: white;
+}
+
+.menu_items h5 {
+  color: black;
+  padding-left: 10px;
+  background-color: white;
+}
+
+/* img{
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+} */
+
+img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  float: none;
+  width: 170px;
+  height: 150px;
+  object-fit: cover;
+}
+/* img {
+  border-radius: 8px;
+  max-height: 150px;
+  max-width: 150px;
+  height: auto; 
+} */
+
+/* img {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+} */
+
+section {
+  background-color: white;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); */
+
+  max-width: 22rem;
+}
+
+main {
+  background-color: blue;
+
+  margin: 5rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  place-items: center;
+  grid-gap: 1rem;
+}
