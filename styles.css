@@ -24,7 +24,7 @@
   margin-right: 2rem;
   color: black;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .logoContainer {
@@ -36,14 +36,19 @@
 .headerElements :hover {
   color: rgb(118, 118, 118);
   cursor: pointer;
+  align-items: center;
 }
 
 .headerElements button {
-  border-radius: 15%;
+  color: white;
+  appearance: button;
+  border-radius: 50%;
   border: none;
-  background-color: rgb(190, 91, 11);
-  margin-left: 3rem;
   font-size: 20px;
+  text-transform: uppercase;
+  margin-right: 1rem;
+  background: rgb(190, 91, 11);
+  padding: calc(0.5rem + 1px) 2rem;
 }
 .exploreOurMenu {
   color: white;
@@ -154,7 +159,9 @@ main {
 #footer div {
   background-color: black;
 }
-
+#line {
+  opacity: 0.3;
+}
 #footer span {
   color: white;
   background-color: black;
@@ -164,14 +171,38 @@ main {
 
 .list1 {
   font-weight: bold;
-  font-size: 20px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 17px;
   padding-bottom: 0.5rem;
 }
+
 .list2 {
-  font-weight: bold;
+  font-weight: normal;
+  padding-left: 1rem;
+  font-size: 13px;
+  padding-bottom: 2rem;
+}
+
+.tm {
+  padding-left: 1rem;
+  font-size: 15px;
+  padding-bottom: 2rem;
+}
+
+.pricesMayVary {
+  padding-left: 1rem;
   font-size: 15px;
   padding-bottom: 1rem;
 }
+
+.illustrate {
+  font-weight: bold;
+  padding-left: 1rem;
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+
 /* #popeyesLogo {
   width: 60rem;
   height: 125px;
