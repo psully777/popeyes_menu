@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "chicken_sans_bold";
+  src: url("assets/fonts/ChickenSans-Bold.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  background-color: rgb(245, 241, 239);
+  font-family: "chicken_sans_bold";
+}
+
+.headerElements {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.headerElements p {
+  margin: 0;
+}
+
+.headerElements span {
+  margin-right: 2rem;
+  color: black;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.logoContainer {
+  color: rgb(255, 125, 8);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.headerElements :hover {
+  color: rgb(118, 118, 118);
+  cursor: pointer;
+  align-items: center;
+}
+
+.headerElements button {
+  color: white;
+  appearance: button;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-right: 1rem;
+  background: rgb(190, 91, 11);
+  padding: calc(0.5rem + 1px) 2rem;
+}
+.exploreOurMenu {
+  color: white;
+  background: rgb(255, 125, 8);
+  min-width: 100%;
+  /* height: 10rem; */
+
+  height: 100%;
+  display: grid;
+}
+
+.exploreOurMenu h1 {
+  font-size: 70px;
+  background-color: rgb(255, 125, 8);
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  margin-left: auto;
+}
+.heading_block {
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  background-color: rgb(245, 241, 239);
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  margin-left: auto;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  background-color: rgb(245, 241, 239);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  place-items: center;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.menuItems {
+  min-width: 80%;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: white;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.menuItems img {
+  float: none;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.menuItems h6 {
+  color: rgb(255, 125, 8);
+  padding-left: 10px;
+  background-color: white;
+}
+
+.menuItems h5 {
+  color: black;
+  padding-left: 10px;
+  background-color: white;
+}
+.subtext {
+  text-align: center;
+}
+.subtext span {
+  text-align: center;
+  color: rgb(255, 125, 8);
+}
+
+/* .heading_block body {
+  background-color: rgb(245, 241, 239);
+} */
+.centered {
+  width: 60rem;
+  height: 125px;
+  margin: 0 auto;
+  text-align: center;
+}
+.resizedTextBox {
+  width: 60rem;
+  height: 20px;
+  text-align: center;
+}
+
+.whiteBar {
+  color: white;
+  min-width: 100%;
+  height: 100%;
+  display: grid;
+  font-size: 70px;
+  background-color: white;
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#footer div {
+  background-color: black;
+}
+#line {
+  opacity: 0.3;
+}
+#footer span {
+  color: white;
+  background-color: black;
+  margin-right: 1rem;
+  display: inline;
+}
+
+.list1 {
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 17px;
+  padding-bottom: 0.5rem;
+}
+
+.list2 {
+  font-weight: normal;
+  padding-left: 1rem;
+  font-size: 13px;
+  padding-bottom: 2rem;
+}
+
+.tm {
+  padding-left: 1rem;
+  font-size: 15px;
+  padding-bottom: 2rem;
+}
+
+.pricesMayVary {
+  padding-left: 1rem;
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+
+.illustrate {
+  font-weight: bold;
+  padding-left: 1rem;
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+
+/* #popeyesLogo {
+  width: 60rem;
+  height: 125px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#menus {
+  font-size: 25px;
+  display: inline-block;
+
+  position: relative;
+  justify-content: space-between;
+  text-align: left;
+  margin: 2rem;
+  margin-right: 2rem;
+  background-color: blueviolet;
+  left: -20px;
+  top: 1rem;
+}
+
+.resizedTextBox {
+  background-color: brown;
+  width: 75rem;
+  height: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+*/
+
+/* img{
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+} */
+
+/* img {
+  border-radius: 8px;
+  max-height: 150px;
+  max-width: 150px;
+  height: auto; 
+} */
+
+/* img {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+} */
+
+/* section {
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+
+  max-width: 22rem;
+}
+
+
+} */

@@ -1,8 +1,0 @@
-@font-face {
-  font-family: "chicken_sans_bold";
-  src: url("assets/fonts/ChickenSans-Bold.woff") format("woff");
-}
-
-* {
-  box-sizing: border-box;
-}
