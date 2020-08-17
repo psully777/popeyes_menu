@@ -3,6 +3,7 @@ if (!localStorage.getItem('userId')) {
 }
 const handleClick = async event => {
   console.log(event, 'This is a button click');
+  const whatGotClicked = event.target.outerHTML;
   const pageX = Math.round(event.pageX);
   const pageY = Math.round(event.pageY);
   const dataId = event.path.find(item => item.dataset.trackingid !=undefined);
@@ -16,10 +17,11 @@ const handleClick = async event => {
       Accept: 'application/json',
     }
     body: JSON.stringify({
+      whatGotClicked,
       pageX, 
       pageY,
-      dataId
-      timestamp
+      dataId,
+      timestamp,
       userId,}),
   })
 };
