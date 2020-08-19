@@ -2,28 +2,29 @@ if (!localStorage.getItem('userId')) {
   localStorage.setItem('userId', String(Math.random()));
 }
 const handleClick = async event => {
-  console.log(event, 'This is a button click');
   const whatGotClicked = event.target.outerHTML;
   const pageX = Math.round(event.pageX);
   const pageY = Math.round(event.pageY);
-  const dataId = event.path.find(item => item.dataset.trackingid !=undefined);
+  const dataId = event.path.find(item => item.dataset.trackingid != undefined);
+  const trackingId = dataId.dataset.trackingid;
   const timestamp = Math.round(event.timeStamp);
-  const userId = localStorage.getItem('userId');
+  const userId = Number(localStorage.getItem('userId'));
 
-  fetch('/clicks',{
+  fetch('/clicks', {
     method: 'POST',
-    headers{
+    headers: {
       'Content-type': 'application/json',
       Accept: 'application/json',
-    }
+    },
     body: JSON.stringify({
       whatGotClicked,
-      pageX, 
+      pageX,
       pageY,
-      dataId,
+      dataId: trackingId,
       timestamp,
-      userId,}),
-  })
+      userId,
+    }),
+  });
 };
 
 window.addEventListener('click', handleClick);
